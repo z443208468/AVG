@@ -1,0 +1,12 @@
+[background arg="#202631" fade="0.0"]
+音乐鉴赏：Skye Cuillin。作曲 Kevin MacLeod，CC BY 4.0。
+label Player
+- 播放
+	audio music "res://TestStuff/Assets/skye-cuillin-by-kevin-macleod-from-filmmusic-io.mp3" [fade="0.0" volume="0.0"]
+	jump /Player
+- 停止
+	audio music "" [fade="0.0"]
+	jump /Player
+- 返回标题
+	audio music "" [fade="0.0"]
+	[signal arg="GAME_END"]

@@ -1,0 +1,25 @@
+[background arg="#202631" fade="0.0"]
+join EditorExample center
+EditorExample: 这是从本地资源导入的示例立绘，姓名与对白使用中文。
+leave EditorExample
+[background arg="#202631" fade="0.0"]
+这是框架技术示例，用于验证中文阅读、选择和小游戏往返，不是正式剧情。
+label Menu
+- 阅读上游人物与演出示例
+	jump TestTimeline/
+- 进入官方 Pong 小游戏
+	jump Pong
+- 查看并解锁背景变体示例
+	jump GalleryExample/
+- 解锁音乐：Teller of the Tales
+	jump MusicTeller/
+- 解锁音乐：Skye Cuillin
+	jump MusicSkye/
+- 试听语音与分轨音效
+	jump AudioExample/
+- 返回标题
+	[signal arg="GAME_END"]
+label Pong
+左侧 W/S，右侧上下键。球越界后返回对白。
+Esc 暂停和存档，Backspace 取消。本页可先保存。
+jump PongExample/

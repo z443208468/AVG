@@ -1,0 +1,12 @@
+label Start
+[background arg="#202631" fade="0.0"]
+[voice path="res://Assets/Voice/Kenney/female_ready.ogg" bus="Voice"]
+女声示例：Ready。此语音通过 Voice 总线播放，设置中的语音音量可单独控制它。
+[voice path="res://Assets/Voice/Kenney/male_ready.ogg" bus="Voice"]
+男声示例：Ready。语音跟随本句对白，推进后由 Dialogic 原生语音系统停止。
+audio effects "res://Assets/Sounds/click1.wav" [bus="SFX" loop="false" fade="0.0"]
+此处播放一次界面点击素材作为 SFX 分轨示例。阅读工具栏与菜单音效仍走 UI_SFX 分轨。
+- 再播放一次
+	jump /Start
+- 返回标题
+	[signal arg="GAME_END"]

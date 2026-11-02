@@ -1,0 +1,13 @@
+[background arg="res://Assets/Backgrounds/JAP/sunsetintheswamp.png" fade="0.0"]
+这里使用 JAP 的 CC0 背景验证时间线鉴赏与变体切换。首次进入后，标题鉴赏中的对应卡片将解锁。
+label Variants
+- 查看第一张背景
+	[background arg="res://Assets/Backgrounds/JAP/sunsetintheswamp.png" fade="0.5"]
+	这是第一张背景。阅读工具栏可以继续使用。
+	jump /Variants
+- 查看第二张背景
+	[background arg="res://Assets/Backgrounds/JAP/coldmountain.png" fade="0.5"]
+	这是第二张背景。
+	jump /Variants
+- 返回标题
+	[signal arg="GAME_END"]

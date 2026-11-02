@@ -1,0 +1,16 @@
+# 作品资料仓库，有独立 Git
+/cangqi/
+# 构建输出与验收临时区
+/dist/
+/staging/
+# 许可未确认的素材，只留本地
+/archive/*Painterly*/
+# Godot 缓存与临时文件
+.godot/
+*.tmp
+# 便携编辑器的机器本地数据
+/engine/*/editor_data/cache/
+/engine/*/editor_data/temp/
+/engine/*/editor_data/keystores/
+/engine/*/editor_data/projects/
+*.log
