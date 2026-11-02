@@ -449,7 +449,7 @@ offset_left = 146.0
 offset_top = 133.0
 offset_right = 761.0
 offset_bottom = 580.0
-text = "苍岐"
+text = "AVG 模板"
 label_settings = SubResource("LabelSettings_o4bwe")
 autowrap_mode = 3
 script = ExtResource("4_gqxse")
@@ -1760,7 +1760,7 @@ offset_top = 123.0
 offset_right = 533.0
 offset_bottom = 714.0
 bbcode_enabled = true
-text = "苍岐文字 AVG 开发框架
+text = "Godot AVG 模板
 
 引擎：Godot Engine
 剧情与演出：Dialogic

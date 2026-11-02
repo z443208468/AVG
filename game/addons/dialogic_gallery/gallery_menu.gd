@@ -35,18 +35,22 @@ func _open() -> void:
 ##								PRIVATE
 ################################################################################
 
+## 游戏自己的鉴赏条目放 content/gallery；examples/gallery 为示例，删除 examples 后自动为空。
+const GALLERY_DIRS := ["res://content/gallery", "res://examples/gallery"]
+
 func _load_timeline_meta_resources():
 	cg_timeline_metas = {}
-	for file in ResourceLoader.list_directory("res://content/gallery"):
-		if file.ends_with(".tres"):
-			var meta: TimelineMeta = ResourceLoader.load("res://content/gallery/%s" % file)
+	for dir in GALLERY_DIRS:
+		for file in ResourceLoader.list_directory(dir):
+			if file.ends_with(".tres"):
+				var meta: TimelineMeta = ResourceLoader.load(dir.path_join(file))
 			
-			if meta.timeline == null:
-				push_warning("Timeline Meta Resource without timeline: %s" % file)
-				continue
-			if meta.timeline_type != TimelineMeta.TimelineType.CG:
-				continue
-			cg_timeline_metas[meta.timeline.get_identifier()]= meta
+				if meta.timeline == null:
+					push_warning("Timeline Meta Resource without timeline: %s" % file)
+					continue
+				if meta.timeline_type != TimelineMeta.TimelineType.CG:
+					continue
+				cg_timeline_metas[meta.timeline.get_identifier()]= meta
 			
 func draw() -> void:
 	var tmp_scene = TimelineMetaCardScene.instantiate()

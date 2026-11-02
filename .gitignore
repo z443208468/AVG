@@ -14,3 +14,7 @@
 /engine/*/editor_data/keystores/
 /engine/*/editor_data/projects/
 *.log
+/engine/*/editor_data/shader_cache/
+/engine/*/editor_data/projects.cfg
+/engine/*/editor_data/editor_settings-*.tres
+/engine/*/editor_data/*.lock

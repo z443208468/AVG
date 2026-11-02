@@ -1,0 +1,21 @@
+[background scene="res://examples/integration/pong_background.tscn" fade="0.0"]
+do ExampleBridge.play_pong()
+[background arg="#202631" fade="0.0"]
+if {PongResult} == "left":
+	左侧获胜。结果已写入 Dialogic 变量 PongResult。
+elif {PongResult} == "right":
+	右侧获胜。结果已写入 Dialogic 变量 PongResult。
+else:
+	已取消小游戏，继续阅读。
+- 再玩一次
+	jump FrameworkExample/Pong
+- 返回示例选单
+	jump FrameworkExample/Menu
+- 记录本次结局并返回标题 | [if {PongResult} != "cancel"] [else="0"]
+	if {PongResult} == "left":
+		jump EndingLeft/
+	elif {PongResult} == "right":
+		jump EndingRight/
+	else:
+		取消不产生结局记录。
+		jump FrameworkExample/Menu

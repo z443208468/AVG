@@ -14,7 +14,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Cangqi AVG Framework"
+config/name="AVG Template"
 config/version="1.0"
 run/main_scene="res://DialogicFantasyMenu/main_menu.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
@@ -22,7 +22,7 @@ config/icon="res://template_icon.svg"
 
 [autoload]
 
-ExampleBridge="*res://integration/example_bridge.gd"
+ExampleBridge="*res://examples/integration/example_bridge.gd"
 Dialogic="*uid://ds2q0uclmolvu"
 
 [dialogic]
@@ -30,24 +30,24 @@ Dialogic="*uid://ds2q0uclmolvu"
 settings/dialogue_font_size=38
 settings/text_speed=1.0
 directories/dch_directory={
-"Alfonso": "res://TestStuff/Alfonso.dch",
-"Astrid": "res://TestStuff/Assets/Characters/Astrid/Astrid.dch",
-"EditorExample": "res://content/EditorExample.dch",
-"Joska": "res://TestStuff/Assets/Characters/Joska/Joska.dch",
-"Lilly": "res://TestStuff/Assets/Characters/Lilly/Lilly.dch",
-"Lucas": "res://TestStuff/Assets/Characters/Lucas/Lucas.dch",
-"Simone": "res://TestStuff/Simone.dch"
+"Alfonso": "res://examples/characters/Alfonso.dch",
+"Astrid": "res://examples/characters/Characters/Astrid/Astrid.dch",
+"EditorExample": "res://examples/characters/EditorExample.dch",
+"Joska": "res://examples/characters/Characters/Joska/Joska.dch",
+"Lilly": "res://examples/characters/Characters/Lilly/Lilly.dch",
+"Lucas": "res://examples/characters/Characters/Lucas/Lucas.dch",
+"Simone": "res://examples/characters/Simone.dch"
 }
 directories/dtl_directory={
-"AudioExample": "res://content/AudioExample.dtl",
-"EndingLeft": "res://content/EndingLeft.dtl",
-"EndingRight": "res://content/EndingRight.dtl",
-"FrameworkExample": "res://content/FrameworkExample.dtl",
-"GalleryExample": "res://content/GalleryExample.dtl",
-"MusicSkye": "res://content/MusicSkye.dtl",
-"MusicTeller": "res://content/MusicTeller.dtl",
-"PongExample": "res://content/PongExample.dtl",
-"TestTimeline": "res://TestStuff/TestTimeline.dtl"
+"AudioExample": "res://examples/timelines/AudioExample.dtl",
+"EndingLeft": "res://examples/timelines/EndingLeft.dtl",
+"EndingRight": "res://examples/timelines/EndingRight.dtl",
+"FrameworkExample": "res://examples/timelines/FrameworkExample.dtl",
+"GalleryExample": "res://examples/timelines/GalleryExample.dtl",
+"MusicSkye": "res://examples/timelines/MusicSkye.dtl",
+"MusicTeller": "res://examples/timelines/MusicTeller.dtl",
+"PongExample": "res://examples/timelines/PongExample.dtl",
+"TestTimeline": "res://examples/timelines/TestTimeline.dtl"
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
@@ -74,7 +74,7 @@ variables={
 "PongResult": "",
 "TextInput": ""
 }
-glossary/glossary_files=["res://TestStuff/test_glossary.tres"]
+glossary/glossary_files=["res://examples/characters/test_glossary.tres"]
 text/autoadvance_per_word_delay=0.4
 text/autoadvance_fixed_delay=0.5
 event_default_overrides={
