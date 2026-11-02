@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgxsnwob0khm0"
-path="res://.godot/imported/angry.png-1475418707451f491c71bdd9ee3f987e.ctex"
+path="res://.godot/imported/angry.png-0c16da68ef0a27bdf7542c06585e148c.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://examples/characters/Characters/Astrid/angry.png"
-dest_files=["res://.godot/imported/angry.png-1475418707451f491c71bdd9ee3f987e.ctex"]
+dest_files=["res://.godot/imported/angry.png-0c16da68ef0a27bdf7542c06585e148c.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uxcv4xn4hune"
-path="res://.godot/imported/angry.png-a23056f616f0fe204583ecd09af378e2.ctex"
+path="res://.godot/imported/angry.png-4006b93fcba04d28eb327cd6d6cfdf81.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://examples/characters/Characters/Joska/angry.png"
-dest_files=["res://.godot/imported/angry.png-a23056f616f0fe204583ecd09af378e2.ctex"]
+dest_files=["res://.godot/imported/angry.png-4006b93fcba04d28eb327cd6d6cfdf81.ctex"]
 
 [params]
 

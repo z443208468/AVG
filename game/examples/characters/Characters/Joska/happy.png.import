@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf4wutuc5jok2"
-path="res://.godot/imported/happy.png-0b4f1446aff4bc8e8e2cad575cc80087.ctex"
+path="res://.godot/imported/happy.png-55bdbf26eee24c547ee5ce54ac95dd52.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://examples/characters/Characters/Joska/happy.png"
-dest_files=["res://.godot/imported/happy.png-0b4f1446aff4bc8e8e2cad575cc80087.ctex"]
+dest_files=["res://.godot/imported/happy.png-55bdbf26eee24c547ee5ce54ac95dd52.ctex"]
 
 [params]
 

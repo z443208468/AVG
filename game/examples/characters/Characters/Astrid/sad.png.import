@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2nenaesgcyhm"
-path="res://.godot/imported/sad.png-a07ed767baf07feffaa75e02e3a68c32.ctex"
+path="res://.godot/imported/sad.png-ceb910b00b4b7bb7761383c118725a69.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://examples/characters/Characters/Astrid/sad.png"
-dest_files=["res://.godot/imported/sad.png-a07ed767baf07feffaa75e02e3a68c32.ctex"]
+dest_files=["res://.godot/imported/sad.png-ceb910b00b4b7bb7761383c118725a69.ctex"]
 
 [params]
 
