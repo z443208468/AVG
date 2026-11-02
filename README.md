@@ -97,4 +97,4 @@ git lfs install
 git lfs pull
 ```
 
-`cangqi/`、`dist/`、`staging/`、编辑器缓存与本机设置不入库。远程仓库：https://github.com/z443208468/AVG 。GitHub 免费账户的 LFS 额度为 1 GB 存储、每月 1 GB 下载，本仓库 LFS 约 440 MB，一个月大约够完整克隆两次；超出需在 GitHub 购买数据包。
+`cangqi/`、`dist/`、`staging/`、编辑器缓存与本机设置不入库。远程仓库：https://github.com/z443208468/AVG 。GitHub Free 含 10 GiB LFS 存储和每月 10 GiB 下载流量；本仓库 LFS 约 440 MB，每完整克隆一次约用 0.44 GiB。超额且未绑定付款方式时，当月 LFS 停用（克隆只得到指针文件）。
