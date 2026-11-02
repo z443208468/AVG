@@ -84,6 +84,10 @@ cangqi/            苍岐作品资料仓库，独立 Git，与模板无关（不
 - 无窗口导入／导出退出时有编辑器 ObjectDB 泄漏提示，不影响产物。
 - 存档目录由 `project.godot` 的 `config/name` 决定；两个项目同名会共用存档，新项目务必改名。
 
+## 许可
+
+模板自身的配置、连接代码与文档按根目录 LICENSE（Apache-2.0）。Godot、Dialogic、FantasyTemplate、鉴赏组件、Pong 示例及各素材保持各自许可，见 `licenses/`。
+
 ## Git
 
 仓库根即本目录，大文件（exe、pck、图片、音频、字体）走 Git LFS。克隆后：
@@ -93,4 +97,4 @@ git lfs install
 git lfs pull
 ```
 
-`cangqi/`、`dist/`、`staging/`、编辑器缓存与本机设置不入库。目前没有远程仓库，需要时 `git remote add origin <地址>` 后 `git push -u origin main`（LFS 对象会一起推送）。
+`cangqi/`、`dist/`、`staging/`、编辑器缓存与本机设置不入库。远程仓库：https://github.com/z443208468/AVG 。GitHub 免费账户的 LFS 额度为 1 GB 存储、每月 1 GB 下载，本仓库 LFS 约 440 MB，一个月大约够完整克隆两次；超出需在 GitHub 购买数据包。
