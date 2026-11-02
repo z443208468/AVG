@@ -18,9 +18,9 @@
 
 ## 角色
 
-Astrid、Joska、Lilly、Lucas 的图片随 FantasyTemplate/TestStuff 引入，按该仓库随附 MIT 许可使用，保留 licenses/Dialogic2FantasyTemplate-MIT.txt。
+Astrid、Joska、Lilly、Lucas 的图片随 FantasyTemplate/TestStuff 引入（现位于 game/examples/characters/），按该仓库随附 MIT 许可使用，保留 licenses/Dialogic2FantasyTemplate-MIT.txt。
 
-Assets/ImportedPortrait.png 是 Astrid/happy.png 的原样副本，由编辑器新建的 content/EditorExample.dch 引用，适用同一来源与许可记录。
+Assets/ImportedPortrait.png 是 Astrid/happy.png 的原样副本，由编辑器新建的 examples/characters/EditorExample.dch 引用，适用同一来源与许可记录。
 
 来源依据：完整 Git 历史显示，初始化提交 76a53876dd361378be1e6891068046833532233c（2024-05-06）同时引入角色文件及 LICENSE.md；后续 cf8947eaef136e385461a286c33c2e05569949c0 仅将版权年份改为 2024-present。采用版本仍固定为 4df229d40bd51e6b751105abb57914722e5d9ec0，没有切换代码版本。未发现角色目录的单独例外许可或第三方署名。这里依据上游分发声明，不额外声称已独立确认每张图片的创作权属。
 

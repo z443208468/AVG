@@ -1,9 +1,8 @@
-[gd_scene load_steps=91 format=3 uid="uid://bh6bho0uxfrwf"]
+[gd_scene format=3 uid="uid://bh6bho0uxfrwf"]
 
 [ext_resource type="Texture2D" uid="uid://cvy321ophmgkn" path="res://Assets/main_menu_background.png" id="1_6pyxn"]
 [ext_resource type="Texture2D" uid="uid://dla06caajfjm8" path="res://Assets/book_overlay.png" id="1_7vbom"]
 [ext_resource type="Script" uid="uid://duflmtkf562st" path="res://DialogicFantasyMenu/main_menu.gd" id="1_43egg"]
-[ext_resource type="FontVariation" path="res://Assets/Fonts/NotoSansSC-Regular.tres" id="1_q2k06"]
 [ext_resource type="Texture2D" uid="uid://bpju6sqixesek" path="res://Assets/main_menu_foreground.png" id="2_eypgr"]
 [ext_resource type="FontVariation" path="res://Assets/Fonts/NotoSansSC-Regular.tres" id="2_xy1ki"]
 [ext_resource type="Script" uid="uid://denl7o1jhr4bx" path="res://DialogicFantasyMenu/overlay_ui.gd" id="3_cyksu"]
@@ -18,12 +17,12 @@
 [ext_resource type="Texture2D" uid="uid://dgk4id6uvrk8s" path="res://Assets/ui_dot.png" id="7_plupt"]
 [ext_resource type="Texture2D" uid="uid://bdr5agvwr75x3" path="res://Assets/Buttons/choice_idle_background.png" id="8_0jvon"]
 [ext_resource type="Texture2D" uid="uid://diuwhfpqqf442" path="res://Assets/Buttons/button_idle.png" id="8_2vbsh"]
-[ext_resource type="AudioStream" path="res://Assets/Sounds/click1.wav" id="8_nt4qj"]
+[ext_resource type="AudioStream" uid="uid://dujtnr7884col" path="res://Assets/Sounds/click1.wav" id="8_nt4qj"]
 [ext_resource type="Texture2D" uid="uid://dmb386gmdbdrt" path="res://Assets/BookButtons/book_button_3_collapsed.png" id="8_yqfpt"]
 [ext_resource type="Texture2D" uid="uid://bfo7m8bl71awp" path="res://Assets/Buttons/checkbox_on.png" id="9_1me2p"]
 [ext_resource type="Texture2D" uid="uid://mmj3x8k2sbfi" path="res://Assets/Buttons/choice_hover_background.png" id="9_71tff"]
 [ext_resource type="Texture2D" uid="uid://da0nnohcj18yq" path="res://Assets/Buttons/button_hover.png" id="9_jewxh"]
-[ext_resource type="AudioStream" path="res://Assets/Sounds/switch15.wav" id="9_jyhuo"]
+[ext_resource type="AudioStream" uid="uid://cqcsdlndkhdij" path="res://Assets/Sounds/switch15.wav" id="9_jyhuo"]
 [ext_resource type="Texture2D" uid="uid://7o0mm6tn8wm1" path="res://Assets/BookButtons/book_button_3_expanded.png" id="9_yxrj1"]
 [ext_resource type="Texture2D" uid="uid://dvxjet0oqdwtk" path="res://Assets/Buttons/button_focus.png" id="10_4bmr6"]
 [ext_resource type="Texture2D" uid="uid://hdi4f0xudeo3" path="res://Assets/Buttons/checkbox_off.png" id="10_77f62"]
@@ -52,16 +51,15 @@
 [ext_resource type="Script" uid="uid://boes2gvg80dmc" path="res://DialogicFantasyMenu/OverlayTabs/tab_pause.gd" id="48_qw4ot"]
 [ext_resource type="Texture2D" uid="uid://cliutjp8wum7d" path="res://Assets/simple_frame.png" id="49_c2sd2"]
 [ext_resource type="Script" uid="uid://wesfwglpk106" path="res://DialogicFantasyMenu/warnings_dialog.gd" id="49_gv1mb"]
-
 [ext_resource type="PackedScene" path="res://addons/dialogic_gallery/gallery_menu.tscn" id="51_gallery"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_o4bwe"]
-font = ExtResource("1_q2k06")
+font = ExtResource("2_xy1ki")
 font_size = 100
 font_color = Color(0.235294, 0.121569, 0.0784314, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_js5ao"]
-font = ExtResource("1_q2k06")
+font = ExtResource("2_xy1ki")
 font_size = 64
 font_color = Color(0.235294, 0.121569, 0.0784314, 1)
 
@@ -93,7 +91,7 @@ texture_margin_right = 55.0
 modulate_color = Color(0.356865, 0.196452, 0.13564, 1)
 
 [sub_resource type="FontVariation" id="FontVariation_sxfcm"]
-base_font = ExtResource("1_q2k06")
+base_font = ExtResource("2_xy1ki")
 spacing_glyph = 8
 
 [sub_resource type="Theme" id="Theme_f8h3t"]
@@ -240,7 +238,7 @@ default_font_size = 30
 ButtonLabel/base_type = &"Label"
 ButtonLabel/colors/font_color = Color(0.235294, 0.121569, 0.0784314, 1)
 ButtonLabel/font_sizes/font_size = 55
-ButtonLabel/fonts/font = ExtResource("1_q2k06")
+ButtonLabel/fonts/font = ExtResource("2_xy1ki")
 CheckBox/colors/font_color = Color(0.235294, 0.121569, 0.0784314, 1)
 CheckBox/colors/font_hover_color = Color(0.536149, 0.310402, 0.224978, 1)
 CheckBox/colors/font_hover_pressed_color = Color(0.537255, 0.309804, 0.223529, 1)
@@ -329,7 +327,7 @@ font_size = 20
 font_color = Color(0.231373, 0.117647, 0.0745098, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_lyejt"]
-font = ExtResource("1_q2k06")
+font = ExtResource("2_xy1ki")
 font_size = 40
 font_color = Color(0.356694, 0.310369, 0.188913, 1)
 
@@ -417,7 +415,7 @@ PanelContainer/styles/panel = SubResource("StyleBoxTexture_jyv2e")
 font_size = 40
 font_color = Color(0.235294, 0.117647, 0.0745098, 1)
 
-[node name="Menus" type="Control"]
+[node name="Menus" type="Control" unique_id=735912739]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -426,12 +424,12 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_lock_ = true
 
-[node name="MainMenu" type="CanvasLayer" parent="."]
+[node name="MainMenu" type="CanvasLayer" parent="." unique_id=388222858]
 unique_name_in_owner = true
 layer = 3
 script = ExtResource("1_43egg")
 
-[node name="MainMenuBG" type="NinePatchRect" parent="MainMenu"]
+[node name="MainMenuBG" type="NinePatchRect" parent="MainMenu" unique_id=677320108]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -444,7 +442,7 @@ patch_margin_right = 150
 patch_margin_bottom = 150
 metadata/_edit_lock_ = true
 
-[node name="Title_Part1" type="Label" parent="MainMenu"]
+[node name="Title_Part1" type="Label" parent="MainMenu" unique_id=839028475]
 offset_left = 146.0
 offset_top = 133.0
 offset_right = 761.0
@@ -455,7 +453,7 @@ autowrap_mode = 3
 script = ExtResource("4_gqxse")
 paralax_strength = 20
 
-[node name="Title_Part2" type="Label" parent="MainMenu"]
+[node name="Title_Part2" type="Label" parent="MainMenu" unique_id=1103653591]
 offset_left = 167.0
 offset_top = 239.0
 offset_right = 700.0
@@ -466,7 +464,7 @@ autowrap_mode = 3
 script = ExtResource("4_gqxse")
 paralax_strength = 40
 
-[node name="Title_Part3" type="Label" parent="MainMenu"]
+[node name="Title_Part3" type="Label" parent="MainMenu" unique_id=857115525]
 offset_left = 167.0
 offset_top = 381.0
 offset_right = 838.0
@@ -477,7 +475,7 @@ autowrap_mode = 3
 script = ExtResource("4_gqxse")
 paralax_strength = 30
 
-[node name="MenuElementA" type="TextureRect" parent="MainMenu"]
+[node name="MenuElementA" type="TextureRect" parent="MainMenu" unique_id=1132596906]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -494,7 +492,7 @@ expand_mode = 1
 script = ExtResource("4_gqxse")
 paralax_strength = 40
 
-[node name="MenuElementB" type="TextureRect" parent="MainMenu/MenuElementA"]
+[node name="MenuElementB" type="TextureRect" parent="MainMenu/MenuElementA" unique_id=935331652]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -508,7 +506,7 @@ expand_mode = 1
 script = ExtResource("4_gqxse")
 paralax_strength = 2
 
-[node name="MenuButtonsParalax" type="Control" parent="MainMenu"]
+[node name="MenuButtonsParalax" type="Control" parent="MainMenu" unique_id=2106094072]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -523,7 +521,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("4_gqxse")
 
-[node name="MainMenuButtons" type="VBoxContainer" parent="MainMenu/MenuButtonsParalax"]
+[node name="MainMenuButtons" type="VBoxContainer" parent="MainMenu/MenuButtonsParalax" unique_id=1957585248]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
@@ -540,7 +538,7 @@ grow_vertical = 2
 theme = SubResource("Theme_f8h3t")
 alignment = 1
 
-[node name="ButtonHoverSound" type="AudioStreamPlayer" parent="MainMenu/MenuButtonsParalax/MainMenuButtons"]
+[node name="ButtonHoverSound" type="AudioStreamPlayer" parent="MainMenu/MenuButtonsParalax/MainMenuButtons" unique_id=931069186]
 unique_name_in_owner = true
 stream = ExtResource("8_nt4qj")
 volume_db = -17.181
@@ -548,7 +546,7 @@ pitch_scale = 0.7
 max_polyphony = 2
 bus = &"UI_SFX"
 
-[node name="ButtonPressedSound" type="AudioStreamPlayer" parent="MainMenu/MenuButtonsParalax/MainMenuButtons"]
+[node name="ButtonPressedSound" type="AudioStreamPlayer" parent="MainMenu/MenuButtonsParalax/MainMenuButtons" unique_id=1719272944]
 unique_name_in_owner = true
 stream = ExtResource("9_jyhuo")
 volume_db = -17.181
@@ -556,66 +554,66 @@ pitch_scale = 0.7
 max_polyphony = 2
 bus = &"UI_SFX"
 
-[node name="Start" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons"]
+[node name="Start" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons" unique_id=1834091658]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 text = "开始游戏"
 flat = true
 
-[node name="Continue" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons"]
+[node name="Continue" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons" unique_id=1716140242]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 theme_type_variation = &"SpecialButton"
 text = "继续游戏"
 
-[node name="Load" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons"]
+[node name="Load" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons" unique_id=365816202]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 text = "读取进度"
 flat = true
 
-[node name="Options" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons"]
+[node name="Options" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons" unique_id=1282931840]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 text = "设置"
 flat = true
 
-[node name="Gallery" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons"]
+[node name="Gallery" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons" unique_id=1952713294]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "鉴赏回放"
 flat = true
 
-[node name="About" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons"]
+[node name="About" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons" unique_id=1554041100]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 text = "制作人员"
 flat = true
 
-[node name="Help" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons"]
+[node name="Help" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons" unique_id=516705065]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 text = "操作帮助"
 flat = true
 
-[node name="Quit" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons"]
+[node name="Quit" type="Button" parent="MainMenu/MenuButtonsParalax/MainMenuButtons" unique_id=1839808073]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 text = "退出游戏"
 flat = true
 
-[node name="GUILayer" type="CanvasLayer" parent="."]
+[node name="GUILayer" type="CanvasLayer" parent="." unique_id=601158438]
 process_mode = 3
 layer = 3
 
-[node name="OverlayUI" type="Control" parent="GUILayer"]
+[node name="OverlayUI" type="Control" parent="GUILayer" unique_id=382706278]
 unique_name_in_owner = true
 visible = false
 layout_mode = 3
@@ -629,7 +627,7 @@ mouse_filter = 2
 theme = SubResource("Theme_etlwy")
 script = ExtResource("3_cyksu")
 
-[node name="BG" type="ColorRect" parent="GUILayer/OverlayUI"]
+[node name="BG" type="ColorRect" parent="GUILayer/OverlayUI" unique_id=1405494324]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -642,7 +640,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.588235)
 
-[node name="BookBG" type="TextureRect" parent="GUILayer/OverlayUI"]
+[node name="BookBG" type="TextureRect" parent="GUILayer/OverlayUI" unique_id=1908900375]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -657,7 +655,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_7vbom")
 
-[node name="CloseButton" type="TextureButton" parent="GUILayer/OverlayUI/BookBG"]
+[node name="CloseButton" type="TextureButton" parent="GUILayer/OverlayUI/BookBG" unique_id=1364192549]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -673,7 +671,7 @@ texture_normal = ExtResource("10_gskv0")
 texture_pressed = ExtResource("11_tepsd")
 texture_hover = ExtResource("11_tepsd")
 
-[node name="TabButtons" type="Control" parent="GUILayer/OverlayUI"]
+[node name="TabButtons" type="Control" parent="GUILayer/OverlayUI" unique_id=914088500]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -684,8 +682,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Button1" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons"]
-focus_mode = 2
+[node name="Button1" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons" unique_id=1455570244]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.00274725
@@ -703,7 +700,7 @@ texture_pressed = ExtResource("5_eoxca")
 texture_hover = ExtResource("5_eoxca")
 script = ExtResource("6_rv1r2")
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button1"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button1" unique_id=469944779]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -721,8 +718,7 @@ text = "暂停"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button2" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons"]
-focus_mode = 2
+[node name="Button2" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons" unique_id=528997297]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.00769231
@@ -740,7 +736,7 @@ texture_pressed = ExtResource("7_oi13f")
 texture_hover = ExtResource("7_oi13f")
 script = ExtResource("6_rv1r2")
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button2"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button2" unique_id=1067330469]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -758,8 +754,7 @@ text = "读取进度"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button3" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons"]
-focus_mode = 2
+[node name="Button3" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons" unique_id=1137984681]
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.447059
@@ -776,7 +771,7 @@ texture_pressed = ExtResource("9_yxrj1")
 texture_hover = ExtResource("9_yxrj1")
 script = ExtResource("6_rv1r2")
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button3"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button3" unique_id=974016885]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -794,8 +789,7 @@ text = "保存进度"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button4" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons"]
-focus_mode = 2
+[node name="Button4" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons" unique_id=1655066591]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.00494506
@@ -813,7 +807,7 @@ texture_pressed = ExtResource("11_m3853")
 texture_hover = ExtResource("11_m3853")
 script = ExtResource("6_rv1r2")
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button4"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button4" unique_id=1130276034]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -831,8 +825,7 @@ text = "历史记录"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button5" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons"]
-focus_mode = 2
+[node name="Button5" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons" unique_id=935167370]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.830769
@@ -850,7 +843,7 @@ texture_pressed = ExtResource("13_0xcss")
 texture_hover = ExtResource("13_0xcss")
 script = ExtResource("6_rv1r2")
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button5"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button5" unique_id=1557973519]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -868,8 +861,7 @@ text = "设置"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button6" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons"]
-focus_mode = 2
+[node name="Button6" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons" unique_id=969658903]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.832967
@@ -887,7 +879,7 @@ texture_pressed = ExtResource("15_32qlk")
 texture_hover = ExtResource("15_32qlk")
 script = ExtResource("6_rv1r2")
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button6"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button6" unique_id=1815573708]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -905,8 +897,7 @@ text = "操作帮助"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button7" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons"]
-focus_mode = 2
+[node name="Button7" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons" unique_id=219194405]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.831868
@@ -923,7 +914,7 @@ texture_pressed = ExtResource("17_2mqio")
 texture_hover = ExtResource("17_2mqio")
 script = ExtResource("6_rv1r2")
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button7"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button7" unique_id=268516676]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -941,8 +932,7 @@ text = "制作人员"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button8" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons"]
-focus_mode = 2
+[node name="Button8" type="TextureButton" parent="GUILayer/OverlayUI/TabButtons" unique_id=492145197]
 visible = false
 layout_mode = 1
 anchors_preset = -1
@@ -961,7 +951,7 @@ texture_pressed = ExtResource("19_xr115")
 texture_hover = ExtResource("19_xr115")
 script = ExtResource("6_rv1r2")
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button8"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/TabButtons/Button8" unique_id=2117409966]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -979,7 +969,7 @@ text = "制作人员"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Tabs" type="Control" parent="GUILayer/OverlayUI"]
+[node name="Tabs" type="Control" parent="GUILayer/OverlayUI" unique_id=359287550]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -993,7 +983,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="PauseTab" type="Control" parent="GUILayer/OverlayUI/Tabs" node_paths=PackedStringArray("button")]
+[node name="PauseTab" type="Control" parent="GUILayer/OverlayUI/Tabs" unique_id=962097336 node_paths=PackedStringArray("button")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
@@ -1006,7 +996,7 @@ mouse_filter = 2
 script = ExtResource("48_qw4ot")
 button = NodePath("../../TabButtons/Button1")
 
-[node name="VBox" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/PauseTab"]
+[node name="VBox" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/PauseTab" unique_id=1047989218]
 layout_mode = 0
 offset_left = 90.0
 offset_top = 237.0
@@ -1014,28 +1004,28 @@ offset_right = 436.0
 offset_bottom = 422.0
 theme = SubResource("Theme_dlfg2")
 
-[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/PauseTab/VBox"]
+[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/PauseTab/VBox" unique_id=844462066]
 layout_mode = 2
 theme_type_variation = &"ButtonLabel"
 horizontal_alignment = 1
 
-[node name="Resume" type="Button" parent="GUILayer/OverlayUI/Tabs/PauseTab/VBox"]
+[node name="Resume" type="Button" parent="GUILayer/OverlayUI/Tabs/PauseTab/VBox" unique_id=1473095841]
 layout_mode = 2
 text = "继续阅读"
 flat = true
 
-[node name="MainMenu" type="Button" parent="GUILayer/OverlayUI/Tabs/PauseTab/VBox"]
+[node name="MainMenu" type="Button" parent="GUILayer/OverlayUI/Tabs/PauseTab/VBox" unique_id=447589170]
 layout_mode = 2
 text = "返回标题"
 flat = true
 
-[node name="PauseQuit" type="Button" parent="GUILayer/OverlayUI/Tabs/PauseTab/VBox"]
+[node name="PauseQuit" type="Button" parent="GUILayer/OverlayUI/Tabs/PauseTab/VBox" unique_id=1520159598]
 unique_name_in_owner = true
 layout_mode = 2
 text = "退出游戏"
 flat = true
 
-[node name="LoadTab" type="Control" parent="GUILayer/OverlayUI/Tabs" node_paths=PackedStringArray("button")]
+[node name="LoadTab" type="Control" parent="GUILayer/OverlayUI/Tabs" unique_id=1042181016 node_paths=PackedStringArray("button")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
@@ -1048,7 +1038,7 @@ mouse_filter = 2
 script = ExtResource("32_6s7qx")
 button = NodePath("../../TabButtons/Button2")
 
-[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/LoadTab"]
+[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/LoadTab" unique_id=1243729518]
 visible = false
 layout_mode = 0
 offset_left = 7.0
@@ -1058,7 +1048,7 @@ offset_bottom = 119.0
 theme_type_variation = &"ButtonLabel"
 text = "读取进度"
 
-[node name="LoadMenu" parent="GUILayer/OverlayUI/Tabs/LoadTab" node_paths=PackedStringArray("WarningDialog") instance=ExtResource("37_tlxuu")]
+[node name="LoadMenu" parent="GUILayer/OverlayUI/Tabs/LoadTab" unique_id=767599486 node_paths=PackedStringArray("WarningDialog") instance=ExtResource("37_tlxuu")]
 layout_mode = 0
 offset_left = 26.0
 offset_top = 80.0
@@ -1067,7 +1057,7 @@ offset_bottom = 717.0
 mode = 1
 WarningDialog = NodePath("../../../../WarningDialog")
 
-[node name="SaveTab" type="Control" parent="GUILayer/OverlayUI/Tabs" node_paths=PackedStringArray("button")]
+[node name="SaveTab" type="Control" parent="GUILayer/OverlayUI/Tabs" unique_id=1742193042 node_paths=PackedStringArray("button")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
@@ -1080,7 +1070,7 @@ mouse_filter = 2
 script = ExtResource("22_3y2b1")
 button = NodePath("../../TabButtons/Button3")
 
-[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/SaveTab"]
+[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/SaveTab" unique_id=952326545]
 visible = false
 layout_mode = 0
 offset_left = 7.0
@@ -1090,7 +1080,7 @@ offset_bottom = 119.0
 theme_type_variation = &"ButtonLabel"
 text = "保存进度"
 
-[node name="SaveMenu" parent="GUILayer/OverlayUI/Tabs/SaveTab" node_paths=PackedStringArray("WarningDialog") instance=ExtResource("37_tlxuu")]
+[node name="SaveMenu" parent="GUILayer/OverlayUI/Tabs/SaveTab" unique_id=342911841 node_paths=PackedStringArray("WarningDialog") instance=ExtResource("37_tlxuu")]
 layout_mode = 0
 offset_left = 26.0
 offset_top = 80.0
@@ -1098,7 +1088,7 @@ offset_right = 1096.0
 offset_bottom = 717.0
 WarningDialog = NodePath("../../../../WarningDialog")
 
-[node name="HistoryTab" type="Control" parent="GUILayer/OverlayUI/Tabs" node_paths=PackedStringArray("button")]
+[node name="HistoryTab" type="Control" parent="GUILayer/OverlayUI/Tabs" unique_id=1519911729 node_paths=PackedStringArray("button")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
@@ -1111,7 +1101,7 @@ mouse_filter = 2
 script = ExtResource("34_2hq4j")
 button = NodePath("../../TabButtons/Button4")
 
-[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/HistoryTab"]
+[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/HistoryTab" unique_id=1816424435]
 visible = false
 layout_mode = 0
 offset_left = 7.0
@@ -1121,7 +1111,7 @@ offset_bottom = 119.0
 theme_type_variation = &"ButtonLabel"
 text = "历史记录"
 
-[node name="Scroll" type="ScrollContainer" parent="GUILayer/OverlayUI/Tabs/HistoryTab"]
+[node name="Scroll" type="ScrollContainer" parent="GUILayer/OverlayUI/Tabs/HistoryTab" unique_id=427019384]
 layout_mode = 0
 offset_left = 25.0
 offset_top = 64.0
@@ -1129,34 +1119,34 @@ offset_right = 529.0
 offset_bottom = 742.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_ja60t")
 
-[node name="HistoryList" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll"]
+[node name="HistoryList" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll" unique_id=1958619755]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="HistoryMessage" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" instance=ExtResource("41_0rfkk")]
+[node name="HistoryMessage" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" unique_id=657188163 instance=ExtResource("41_0rfkk")]
 layout_mode = 2
 
-[node name="HistoryMessage2" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" instance=ExtResource("41_0rfkk")]
+[node name="HistoryMessage2" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" unique_id=1486231394 instance=ExtResource("41_0rfkk")]
 layout_mode = 2
 
-[node name="HistoryMessage3" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" instance=ExtResource("41_0rfkk")]
+[node name="HistoryMessage3" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" unique_id=1960233629 instance=ExtResource("41_0rfkk")]
 layout_mode = 2
 
-[node name="HistoryMessage4" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" instance=ExtResource("41_0rfkk")]
+[node name="HistoryMessage4" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" unique_id=1770829187 instance=ExtResource("41_0rfkk")]
 layout_mode = 2
 
-[node name="HistoryMessage5" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" instance=ExtResource("41_0rfkk")]
+[node name="HistoryMessage5" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" unique_id=36289203 instance=ExtResource("41_0rfkk")]
 layout_mode = 2
 
-[node name="HistoryMessage6" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" instance=ExtResource("41_0rfkk")]
+[node name="HistoryMessage6" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" unique_id=365026041 instance=ExtResource("41_0rfkk")]
 layout_mode = 2
 
-[node name="HistoryMessage7" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" instance=ExtResource("41_0rfkk")]
+[node name="HistoryMessage7" parent="GUILayer/OverlayUI/Tabs/HistoryTab/Scroll/HistoryList" unique_id=1635405598 instance=ExtResource("41_0rfkk")]
 layout_mode = 2
 
-[node name="OptionsTab" type="Control" parent="GUILayer/OverlayUI/Tabs" node_paths=PackedStringArray("button")]
+[node name="OptionsTab" type="Control" parent="GUILayer/OverlayUI/Tabs" unique_id=1395278250 node_paths=PackedStringArray("button")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
@@ -1169,14 +1159,15 @@ mouse_filter = 2
 script = ExtResource("33_4rhgd")
 button = NodePath("../../TabButtons/Button5")
 
-[node name="ResetDefaults" type="Button" parent="GUILayer/OverlayUI/Tabs/OptionsTab"]
+[node name="ResetDefaults" type="Button" parent="GUILayer/OverlayUI/Tabs/OptionsTab" unique_id=1786739446]
+layout_mode = 0
 offset_left = 840.0
 offset_top = 55.0
 offset_right = 1100.0
 offset_bottom = 110.0
 text = "恢复默认"
 
-[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab"]
+[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab" unique_id=1885876806]
 layout_mode = 0
 offset_left = 7.0
 offset_top = 71.0
@@ -1185,7 +1176,7 @@ offset_bottom = 119.0
 theme_type_variation = &"ButtonLabel"
 text = "设置"
 
-[node name="VBox" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab"]
+[node name="VBox" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab" unique_id=1595605093]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 124.0
@@ -1193,16 +1184,16 @@ offset_right = 517.0
 offset_bottom = 730.0
 theme_override_constants/separation = 31
 
-[node name="DisplayOption" type="HBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox"]
+[node name="DisplayOption" type="HBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox" unique_id=113361494]
 layout_mode = 2
 
-[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/DisplayOption"]
+[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/DisplayOption" unique_id=32314483]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_type_variation = &"SectionLabel"
 text = "显示模式"
 
-[node name="Setting_Display" type="OptionButton" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/DisplayOption"]
+[node name="Setting_Display" type="OptionButton" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/DisplayOption" unique_id=159955933]
 unique_name_in_owner = true
 layout_mode = 2
 selected = 0
@@ -1216,16 +1207,16 @@ popup/item_2/id = 2
 popup/item_3/text = "窗口 1920×1080"
 popup/item_3/id = 3
 
-[node name="TextSpeedOption" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox"]
+[node name="TextSpeedOption" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox" unique_id=1060401477]
 layout_mode = 2
 theme_override_constants/separation = -5
 
-[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/TextSpeedOption"]
+[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/TextSpeedOption" unique_id=208749665]
 layout_mode = 2
 theme_type_variation = &"SectionLabel"
 text = "文字速度"
 
-[node name="Setting_TextSpeed" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/TextSpeedOption"]
+[node name="Setting_TextSpeed" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/TextSpeedOption" unique_id=420569399]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -1233,7 +1224,7 @@ max_value = 2.0
 step = 0.05
 value = 1.0
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/TextSpeedOption/Setting_TextSpeed"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/TextSpeedOption/Setting_TextSpeed" unique_id=95623392]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -1246,7 +1237,7 @@ grow_vertical = 0
 text = "即时"
 label_settings = SubResource("LabelSettings_w0efh")
 
-[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/TextSpeedOption/Setting_TextSpeed"]
+[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/TextSpeedOption/Setting_TextSpeed" unique_id=1843302532]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -1262,7 +1253,7 @@ text = "慢"
 label_settings = SubResource("LabelSettings_w0efh")
 horizontal_alignment = 2
 
-[node name="Label3" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/TextSpeedOption/Setting_TextSpeed"]
+[node name="Label3" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/TextSpeedOption/Setting_TextSpeed" unique_id=482838331]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -1278,16 +1269,16 @@ text = "默认"
 label_settings = SubResource("LabelSettings_w0efh")
 horizontal_alignment = 1
 
-[node name="AutoSpeedOption" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox"]
+[node name="AutoSpeedOption" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox" unique_id=567726967]
 layout_mode = 2
 theme_override_constants/separation = -7
 
-[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/AutoSpeedOption"]
+[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/AutoSpeedOption" unique_id=1576651829]
 layout_mode = 2
 theme_type_variation = &"SectionLabel"
 text = "自动阅读速度"
 
-[node name="Setting_AutoSpeed" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/AutoSpeedOption"]
+[node name="Setting_AutoSpeed" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/AutoSpeedOption" unique_id=331756608]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -1295,7 +1286,7 @@ max_value = 2.0
 step = 0.05
 value = 1.0
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/AutoSpeedOption/Setting_AutoSpeed"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/AutoSpeedOption/Setting_AutoSpeed" unique_id=2075858344]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -1308,7 +1299,7 @@ grow_vertical = 0
 text = "快"
 label_settings = SubResource("LabelSettings_w0efh")
 
-[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/AutoSpeedOption/Setting_AutoSpeed"]
+[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/AutoSpeedOption/Setting_AutoSpeed" unique_id=1735235194]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -1324,7 +1315,7 @@ text = "慢"
 label_settings = SubResource("LabelSettings_w0efh")
 horizontal_alignment = 2
 
-[node name="Label3" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/AutoSpeedOption/Setting_AutoSpeed"]
+[node name="Label3" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/AutoSpeedOption/Setting_AutoSpeed" unique_id=1655853238]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -1340,44 +1331,43 @@ text = "默认"
 label_settings = SubResource("LabelSettings_w0efh")
 horizontal_alignment = 1
 
-[node name="SkipOption" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox"]
+[node name="SkipOption" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox" unique_id=630617901]
 layout_mode = 2
 
-[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/SkipOption"]
+[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/SkipOption" unique_id=1645274724]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_type_variation = &"SectionLabel"
 text = "快进"
 
-[node name="Setting_SkipUnseen" type="CheckBox" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/SkipOption"]
+[node name="Setting_SkipUnseen" type="CheckBox" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/SkipOption" unique_id=244752144]
 unique_name_in_owner = true
 layout_mode = 2
 text = "遇到未读文字停止快进"
 
-[node name="Setting_SkipSeen" type="CheckBox" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/SkipOption"]
+[node name="Setting_SkipSeen" type="CheckBox" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/SkipOption" unique_id=1683205612]
 unique_name_in_owner = true
 layout_mode = 2
 text = "自动快进已读文字"
 
-[node name="FontSize" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox"]
+[node name="FontSize" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox" unique_id=483359706]
 layout_mode = 2
 theme_override_constants/separation = -5
 
-[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/FontSize"]
+[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/FontSize" unique_id=706520276]
 layout_mode = 2
 theme_type_variation = &"SectionLabel"
 text = "对白字号"
 
-[node name="Setting_FontSize" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/FontSize"]
+[node name="Setting_FontSize" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/FontSize" unique_id=312382743]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 min_value = 28.0
 max_value = 54.0
-step = 1.0
 value = 38.0
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/FontSize/Setting_FontSize"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/FontSize/Setting_FontSize" unique_id=1146476205]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -1390,7 +1380,7 @@ grow_vertical = 0
 text = "小"
 label_settings = SubResource("LabelSettings_w0efh")
 
-[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/FontSize/Setting_FontSize"]
+[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/FontSize/Setting_FontSize" unique_id=750400886]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -1406,7 +1396,7 @@ text = "大"
 label_settings = SubResource("LabelSettings_w0efh")
 horizontal_alignment = 2
 
-[node name="VBox2" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab"]
+[node name="VBox2" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab" unique_id=1450935432]
 layout_mode = 0
 offset_left = 594.0
 offset_top = 117.0
@@ -1414,16 +1404,16 @@ offset_right = 1099.0
 offset_bottom = 723.0
 theme_override_constants/separation = 31
 
-[node name="MasterVolume" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2"]
+[node name="MasterVolume" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2" unique_id=306871384]
 layout_mode = 2
 theme_override_constants/separation = -5
 
-[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MasterVolume"]
+[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MasterVolume" unique_id=25112614]
 layout_mode = 2
 theme_type_variation = &"SectionLabel"
 text = "主音量"
 
-[node name="Setting_MasterVolume" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MasterVolume"]
+[node name="Setting_MasterVolume" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MasterVolume" unique_id=2049936583]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -1431,7 +1421,7 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MasterVolume/Setting_MasterVolume"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MasterVolume/Setting_MasterVolume" unique_id=2029378402]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -1444,7 +1434,7 @@ grow_vertical = 0
 text = "静音"
 label_settings = SubResource("LabelSettings_w0efh")
 
-[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MasterVolume/Setting_MasterVolume"]
+[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MasterVolume/Setting_MasterVolume" unique_id=1304549209]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -1460,16 +1450,16 @@ text = "最大"
 label_settings = SubResource("LabelSettings_w0efh")
 horizontal_alignment = 2
 
-[node name="MusicVolume" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2"]
+[node name="MusicVolume" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2" unique_id=1484528973]
 layout_mode = 2
 theme_override_constants/separation = -5
 
-[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MusicVolume"]
+[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MusicVolume" unique_id=2049181816]
 layout_mode = 2
 theme_type_variation = &"SectionLabel"
 text = "音乐音量"
 
-[node name="Setting_MusicVolume" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MusicVolume"]
+[node name="Setting_MusicVolume" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MusicVolume" unique_id=1008523733]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -1477,7 +1467,7 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MusicVolume/Setting_MusicVolume"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MusicVolume/Setting_MusicVolume" unique_id=990981412]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -1490,7 +1480,7 @@ grow_vertical = 0
 text = "静音"
 label_settings = SubResource("LabelSettings_w0efh")
 
-[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MusicVolume/Setting_MusicVolume"]
+[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MusicVolume/Setting_MusicVolume" unique_id=2094351384]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -1506,16 +1496,16 @@ text = "最大"
 label_settings = SubResource("LabelSettings_w0efh")
 horizontal_alignment = 2
 
-[node name="VoiceVolume" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2"]
+[node name="VoiceVolume" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2" unique_id=1543057716]
 layout_mode = 2
 theme_override_constants/separation = -5
 
-[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/VoiceVolume"]
+[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/VoiceVolume" unique_id=976254130]
 layout_mode = 2
 theme_type_variation = &"SectionLabel"
 text = "语音音量"
 
-[node name="Setting_VoiceVolume" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/VoiceVolume"]
+[node name="Setting_VoiceVolume" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/VoiceVolume" unique_id=1210171101]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -1523,7 +1513,7 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/VoiceVolume/Setting_VoiceVolume"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/VoiceVolume/Setting_VoiceVolume" unique_id=572379470]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -1536,7 +1526,7 @@ grow_vertical = 0
 text = "静音"
 label_settings = SubResource("LabelSettings_w0efh")
 
-[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/VoiceVolume/Setting_VoiceVolume"]
+[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/VoiceVolume/Setting_VoiceVolume" unique_id=394748676]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -1552,16 +1542,16 @@ text = "最大"
 label_settings = SubResource("LabelSettings_w0efh")
 horizontal_alignment = 2
 
-[node name="SoundEffectsVolume" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2"]
+[node name="SoundEffectsVolume" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2" unique_id=1847368556]
 layout_mode = 2
 theme_override_constants/separation = -7
 
-[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/SoundEffectsVolume"]
+[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/SoundEffectsVolume" unique_id=947247379]
 layout_mode = 2
 theme_type_variation = &"SectionLabel"
 text = "音效音量"
 
-[node name="Setting_SoundsVolume" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/SoundEffectsVolume"]
+[node name="Setting_SoundsVolume" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/SoundEffectsVolume" unique_id=1802681796]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -1569,7 +1559,7 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/SoundEffectsVolume/Setting_SoundsVolume"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/SoundEffectsVolume/Setting_SoundsVolume" unique_id=1213072405]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -1582,7 +1572,7 @@ grow_vertical = 0
 text = "静音"
 label_settings = SubResource("LabelSettings_w0efh")
 
-[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/SoundEffectsVolume/Setting_SoundsVolume"]
+[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/SoundEffectsVolume/Setting_SoundsVolume" unique_id=1792980345]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -1598,16 +1588,16 @@ text = "最大"
 label_settings = SubResource("LabelSettings_w0efh")
 horizontal_alignment = 2
 
-[node name="UI_SoundEffectsVolume" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2"]
+[node name="UI_SoundEffectsVolume" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2" unique_id=1730416178]
 layout_mode = 2
 theme_override_constants/separation = -7
 
-[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/UI_SoundEffectsVolume"]
+[node name="SectionTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/UI_SoundEffectsVolume" unique_id=752872765]
 layout_mode = 2
 theme_type_variation = &"SectionLabel"
 text = "界面音量"
 
-[node name="Setting_UIVolume" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/UI_SoundEffectsVolume"]
+[node name="Setting_UIVolume" type="HSlider" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/UI_SoundEffectsVolume" unique_id=966356179]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -1615,7 +1605,7 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/UI_SoundEffectsVolume/Setting_UIVolume"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/UI_SoundEffectsVolume/Setting_UIVolume" unique_id=770554857]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -1628,7 +1618,7 @@ grow_vertical = 0
 text = "静音"
 label_settings = SubResource("LabelSettings_w0efh")
 
-[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/UI_SoundEffectsVolume/Setting_UIVolume"]
+[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/UI_SoundEffectsVolume/Setting_UIVolume" unique_id=2076391345]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -1644,7 +1634,7 @@ text = "最大"
 label_settings = SubResource("LabelSettings_w0efh")
 horizontal_alignment = 2
 
-[node name="HelpTab" type="Control" parent="GUILayer/OverlayUI/Tabs" node_paths=PackedStringArray("button")]
+[node name="HelpTab" type="Control" parent="GUILayer/OverlayUI/Tabs" unique_id=1021794059 node_paths=PackedStringArray("button")]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -1656,7 +1646,7 @@ mouse_filter = 2
 script = ExtResource("34_yevvp")
 button = NodePath("../../TabButtons/Button6")
 
-[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab"]
+[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab" unique_id=626337737]
 layout_mode = 0
 offset_left = 7.0
 offset_top = 71.0
@@ -1665,73 +1655,73 @@ offset_bottom = 119.0
 theme_type_variation = &"ButtonLabel"
 text = "操作帮助"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/HelpTab"]
+[node name="VBoxContainer" type="VBoxContainer" parent="GUILayer/OverlayUI/Tabs/HelpTab" unique_id=351923393]
 layout_mode = 0
 offset_left = 11.0
 offset_top = 131.0
 offset_right = 520.0
 offset_bottom = 734.0
 
-[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer"]
+[node name="Label" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer" unique_id=1363433346]
 layout_mode = 2
 text = "推进对白"
 label_settings = SubResource("LabelSettings_lyejt")
 
-[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer"]
+[node name="Label2" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer" unique_id=836107881]
 layout_mode = 2
 text = "回车 / 空格 / X / 鼠标左键"
 label_settings = SubResource("LabelSettings_chcp5")
 autowrap_mode = 3
 
-[node name="Label3" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer"]
+[node name="Label3" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer" unique_id=1343649421]
 layout_mode = 2
 text = "确认选项"
 label_settings = SubResource("LabelSettings_lyejt")
 
-[node name="Label4" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer"]
+[node name="Label4" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer" unique_id=1286066697]
 layout_mode = 2
 text = "回车 / 空格 / 鼠标左键"
 label_settings = SubResource("LabelSettings_chcp5")
 autowrap_mode = 3
 
-[node name="Label5" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer"]
+[node name="Label5" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer" unique_id=1572600180]
 layout_mode = 2
 text = "切换选项"
 label_settings = SubResource("LabelSettings_lyejt")
 
-[node name="Label6" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer"]
+[node name="Label6" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer" unique_id=1241728012]
 layout_mode = 2
 text = "方向键 上 / 下"
 label_settings = SubResource("LabelSettings_chcp5")
 autowrap_mode = 3
 
-[node name="Label7" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer"]
+[node name="Label7" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer" unique_id=2023634625]
 layout_mode = 2
 text = "暂停菜单"
 label_settings = SubResource("LabelSettings_lyejt")
 
-[node name="Label8" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer"]
+[node name="Label8" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer" unique_id=1292787618]
 layout_mode = 2
 text = "Esc / Tab"
 label_settings = SubResource("LabelSettings_chcp5")
 autowrap_mode = 3
 
-[node name="Label9" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer"]
+[node name="Label9" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer" unique_id=649977779]
 layout_mode = 2
 text = "快进 / 隐藏对白"
 label_settings = SubResource("LabelSettings_lyejt")
 
-[node name="Label10" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer"]
+[node name="Label10" type="Label" parent="GUILayer/OverlayUI/Tabs/HelpTab/VBoxContainer" unique_id=705964047]
 layout_mode = 2
 text = "Ctrl 快进；H 隐藏 / 恢复已显示完的对白"
 label_settings = SubResource("LabelSettings_chcp5")
 autowrap_mode = 3
 
-[node name="GalleryTab" parent="GUILayer/OverlayUI/Tabs" instance=ExtResource("51_gallery")]
+[node name="GalleryTab" parent="GUILayer/OverlayUI/Tabs" unique_id=1671839870 instance=ExtResource("51_gallery")]
 unique_name_in_owner = true
 layout_mode = 1
 
-[node name="AboutTab" type="Control" parent="GUILayer/OverlayUI/Tabs" node_paths=PackedStringArray("button")]
+[node name="AboutTab" type="Control" parent="GUILayer/OverlayUI/Tabs" unique_id=747689004 node_paths=PackedStringArray("button")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
@@ -1744,7 +1734,7 @@ mouse_filter = 2
 script = ExtResource("33_i8t60")
 button = NodePath("../../TabButtons/Button7")
 
-[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/AboutTab"]
+[node name="TabTitle" type="Label" parent="GUILayer/OverlayUI/Tabs/AboutTab" unique_id=41680876]
 layout_mode = 0
 offset_left = 7.0
 offset_top = 71.0
@@ -1753,7 +1743,7 @@ offset_bottom = 119.0
 theme_type_variation = &"ButtonLabel"
 text = "制作人员"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="GUILayer/OverlayUI/Tabs/AboutTab"]
+[node name="RichTextLabel" type="RichTextLabel" parent="GUILayer/OverlayUI/Tabs/AboutTab" unique_id=106011788]
 layout_mode = 0
 offset_left = 10.0
 offset_top = 123.0
@@ -1773,7 +1763,7 @@ Dialogic2FantasyTemplate
 示例背景：JAP（CC0）
 界面音效：Kenney（CC0）"
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="GUILayer/OverlayUI/Tabs/AboutTab"]
+[node name="RichTextLabel2" type="RichTextLabel" parent="GUILayer/OverlayUI/Tabs/AboutTab" unique_id=678957562]
 layout_mode = 0
 offset_left = 587.0
 offset_top = 124.0
@@ -1792,7 +1782,7 @@ creativecommons.org/licenses/by/4.0/
 许可副本与已核对来源随开发预览包
 保存在 licenses 目录。"
 
-[node name="WarningDialog" type="Control" parent="GUILayer"]
+[node name="WarningDialog" type="Control" parent="GUILayer" unique_id=1810734721]
 unique_name_in_owner = true
 visible = false
 layout_mode = 3
@@ -1808,7 +1798,7 @@ grow_vertical = 2
 theme = SubResource("Theme_p64dq")
 script = ExtResource("49_gv1mb")
 
-[node name="BG" type="ColorRect" parent="GUILayer/WarningDialog"]
+[node name="BG" type="ColorRect" parent="GUILayer/WarningDialog" unique_id=1817758809]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1817,7 +1807,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.513726)
 
-[node name="PanelContainer" type="PanelContainer" parent="GUILayer/WarningDialog"]
+[node name="PanelContainer" type="PanelContainer" parent="GUILayer/WarningDialog" unique_id=1686338925]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -1831,10 +1821,10 @@ offset_bottom = 93.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GUILayer/WarningDialog/PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="GUILayer/WarningDialog/PanelContainer" unique_id=1599326549]
 layout_mode = 2
 
-[node name="Message" type="Label" parent="GUILayer/WarningDialog/PanelContainer/VBoxContainer"]
+[node name="Message" type="Label" parent="GUILayer/WarningDialog/PanelContainer/VBoxContainer" unique_id=90664642]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
@@ -1842,7 +1832,7 @@ text = "当前未保存的进度将丢失，确定读取吗？"
 label_settings = SubResource("LabelSettings_wu0cv")
 autowrap_mode = 3
 
-[node name="WarningOptions" type="HBoxContainer" parent="GUILayer/WarningDialog/PanelContainer/VBoxContainer"]
+[node name="WarningOptions" type="HBoxContainer" parent="GUILayer/WarningDialog/PanelContainer/VBoxContainer" unique_id=1037008648]
 unique_name_in_owner = true
 layout_mode = 2
 
@@ -1852,6 +1842,7 @@ layout_mode = 2
 [connection signal="pressed" from="MainMenu/MenuButtonsParalax/MainMenuButtons/Continue" to="MainMenu" method="_on_continue_pressed"]
 [connection signal="pressed" from="MainMenu/MenuButtonsParalax/MainMenuButtons/Load" to="MainMenu" method="_on_load_pressed"]
 [connection signal="pressed" from="MainMenu/MenuButtonsParalax/MainMenuButtons/Options" to="MainMenu" method="_on_options_pressed"]
+[connection signal="pressed" from="MainMenu/MenuButtonsParalax/MainMenuButtons/Gallery" to="MainMenu" method="_on_gallery_pressed"]
 [connection signal="pressed" from="MainMenu/MenuButtonsParalax/MainMenuButtons/About" to="MainMenu" method="_on_about_pressed"]
 [connection signal="pressed" from="MainMenu/MenuButtonsParalax/MainMenuButtons/Help" to="MainMenu" method="_on_help_pressed"]
 [connection signal="pressed" from="MainMenu/MenuButtonsParalax/MainMenuButtons/Quit" to="MainMenu" method="_on_quit_pressed"]
@@ -1864,23 +1855,18 @@ layout_mode = 2
 [connection signal="page_changed" from="GUILayer/OverlayUI/Tabs/LoadTab/LoadMenu" to="GUILayer/OverlayUI/Tabs/SaveTab/SaveMenu" method="load_page"]
 [connection signal="page_changed" from="GUILayer/OverlayUI/Tabs/SaveTab/SaveMenu" to="GUILayer/OverlayUI/Tabs/LoadTab/LoadMenu" method="load_page"]
 [connection signal="saved" from="GUILayer/OverlayUI/Tabs/SaveTab/SaveMenu" to="GUILayer/OverlayUI/Tabs/SaveTab" method="_on_save_menu_saved"]
+[connection signal="pressed" from="GUILayer/OverlayUI/Tabs/OptionsTab/ResetDefaults" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_reset_defaults_pressed"]
 [connection signal="item_selected" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/DisplayOption/Setting_Display" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_display_item_selected"]
 [connection signal="value_changed" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/TextSpeedOption/Setting_TextSpeed" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_text_speed_value_changed"]
 [connection signal="value_changed" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/AutoSpeedOption/Setting_AutoSpeed" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_auto_speed_value_changed"]
 [connection signal="toggled" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/SkipOption/Setting_SkipUnseen" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_skip_unseen_toggled"]
 [connection signal="toggled" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/SkipOption/Setting_SkipSeen" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_skip_seen_toggled"]
+[connection signal="value_changed" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/FontSize/Setting_FontSize" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_font_size_value_changed"]
+[connection signal="value_changed" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MasterVolume/Setting_MasterVolume" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_master_volume_value_changed"]
 [connection signal="value_changed" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MusicVolume/Setting_MusicVolume" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_music_volume_value_changed"]
+[connection signal="value_changed" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/VoiceVolume/Setting_VoiceVolume" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_voice_volume_value_changed"]
 [connection signal="value_changed" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/SoundEffectsVolume/Setting_SoundsVolume" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_sounds_volume_value_changed"]
 [connection signal="value_changed" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/UI_SoundEffectsVolume/Setting_UIVolume" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_ui_volume_value_changed"]
+[connection signal="selected" from="GUILayer/OverlayUI/Tabs/GalleryTab" to="MainMenu" method="_on_gallery_selected"]
 [connection signal="meta_clicked" from="GUILayer/OverlayUI/Tabs/AboutTab/RichTextLabel" to="GUILayer/OverlayUI/Tabs/AboutTab" method="_on_rich_text_label_meta_clicked"]
 [connection signal="meta_clicked" from="GUILayer/OverlayUI/Tabs/AboutTab/RichTextLabel2" to="GUILayer/OverlayUI/Tabs/AboutTab" method="_on_rich_text_label_meta_clicked"]
-
-[connection signal="pressed" from="MainMenu/MenuButtonsParalax/MainMenuButtons/Gallery" to="MainMenu" method="_on_gallery_pressed"]
-[connection signal="selected" from="GUILayer/OverlayUI/Tabs/GalleryTab" to="MainMenu" method="_on_gallery_selected"]
-
-[connection signal="value_changed" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/MasterVolume/Setting_MasterVolume" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_master_volume_value_changed"]
-
-[connection signal="value_changed" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox2/VoiceVolume/Setting_VoiceVolume" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_voice_volume_value_changed"]
-
-[connection signal="value_changed" from="GUILayer/OverlayUI/Tabs/OptionsTab/VBox/FontSize/Setting_FontSize" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_setting_font_size_value_changed"]
-[connection signal="pressed" from="GUILayer/OverlayUI/Tabs/OptionsTab/ResetDefaults" to="GUILayer/OverlayUI/Tabs/OptionsTab" method="_on_reset_defaults_pressed"]

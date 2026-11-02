@@ -1,6 +1,6 @@
 # 技术示例语音
 
-Kenney Voiceover Pack（CC0）原包中的 Female/ready.ogg 和 Male/ready.ogg，分别原样保存为 game/Assets/Voice/Kenney/female_ready.ogg、male_ready.ogg。
+Kenney Voiceover Pack（CC0）原包中的 Female/ready.ogg 和 Male/ready.ogg，分别原样保存为 game/examples/assets/voice/Kenney/female_ready.ogg、male_ready.ogg。
 
 作者发布页：https://kenney.nl/assets/voiceover-pack  
 作者上传的下载页：https://opengameart.org/content/voiceover-pack-40-lines  

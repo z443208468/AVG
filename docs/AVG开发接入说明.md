@@ -1,105 +1,87 @@
 # AVG 开发接入说明
 
-适用本地 Godot 4.7.2、Dialogic alpha 20 与 FantasyTemplate。功能验证范围以根 README 为准；文档介绍接口不代表全部验收通过。
+Godot 4.7.2、Dialogic alpha 20、FantasyTemplate。示例路径都在 `game/examples/`，新内容放 `game/content/`。
 
-## 打开与运行
+## 运行与预览
 
-运行根目录“启动编辑器.ps1”，工程在 game/project.godot。本地入口启用 Godot 原生单窗口模式，创建人物或导入图片时，文件框留在编辑器窗口内。
+- `启动编辑器.ps1` 打开工程（单窗口模式，文件对话框在编辑器内）。
+- F5 运行整个游戏（标题、存档、设置齐全）。
+- Dialogic 时间线编辑器里按 **Ctrl+F6** 单独预览当前时间线。预览会先保存时间线；预览不写入已读记录、不触发自动存档，不会影响玩家的继续点和鉴赏解锁。预览没有标题与存档菜单。
+- 打开主菜单场景时标签上可能出现 `(*)`，是 Godot 规整场景格式，保存无实际变化。
 
-进入 Dialogic 面板编辑时间线。F5 运行整个游戏，Dialogic 的 Play Timeline 单独预览当前时间线。单独预览没有正式标题、暂停或存档菜单；其原生场景现先加载已读记录，并关闭自动保存，避免覆盖玩家进度。该修正还需实际预览复核。
+## 人物、表情、立绘
 
-当前编辑器的“编辑器设置 → 运行 → 自动保存 → 运行前保存”已关闭，以保留已有未保存场景。确认自己的场景后可自行恢复默认；不要为运行示例盲目保存或丢弃其他场景。
+1. 把有许可的图片放进 `game/content/characters/角色名/`，等待导入。
+2. Dialogic → Character → 新建，保存在 `game/content/`。
+3. 填 Display Name；Portraits 里的文件夹按钮（Import Images as Portraits）可批量导入图片作为表情。
+4. 为每个表情选图，设默认表情、缩放、偏移、镜像。
+5. 时间线里用 Join、Text、Update Portrait、Leave。
 
-“启动游戏.ps1”用本地引擎运行正式主场景。“导出Windows.ps1”调用本地匹配模板导出 exe／pck，并复制 licenses。只发玩家目录即可，无需编辑器、外部工作台或数据库。
+参考：`examples/characters/EditorExample.dch`（编辑器新建的中文角色）、`examples/characters/Characters/Astrid/Astrid.dch`（多表情）、`examples/timelines/TestTimeline.dtl`（演出）。角色资源名与显示名可以不同。
 
-## 新增人物、表情和图片
+## 时间线、变量、选择
 
-1. 将有许可的图片复制到 game/Assets/Characters/角色名，等待 Godot 导入。
-2. 在 Dialogic 新建 Character，保存到 game/content/characters。
-3. 填写 Display Name；Portraits 的文件夹按钮为“Import Images as Portraits”。在文件框选择实际图片缩略图后按 Open，默认表情会写入角色资源。
-4. 给各表情选择本地图片，配置默认表情、比例、偏移与镜像。
-5. 时间线使用 Join、Text、Update Portrait、Leave。
-
-本轮通过编辑器真实创建的例子为 content/EditorExample.dch，中文显示名“示例人物”，默认表情 Imported Portrait，引用 Assets/ImportedPortrait.png。该图复制自模板 Astrid/happy.png，沿用模板许可，具体来源见 licenses/TEMPLATE-ASSET-SOURCES.md。
-
-多表情配置参考 TestStuff/Assets/Characters/Astrid/Astrid.dch、Lucas/Lucas.dch；演出参考 TestStuff/TestTimeline.dtl。原生 dch 是 Godot Variant 文本，不是普通 JSON。角色资源标识与显示姓名不同。
-
-## 时间线、变量与选择
-
-同一 dtl 可用可视化及文本编辑器编辑。可视化／文本切换会调用原生保存；Play Timeline 也会先保存当前时间线。本轮两种编辑模式和预览均已实际使用。
-
-FrameworkExample 是技术选单，PongExample 是小游戏结果分支。变量沿用 Dialogic 的 Variables 配置，当前有 PongResult 与 TextInput。引用及跳转使用本地资源标识。
+可视化与文本两种编辑模式可互相切换。文本写法示例：
 
 ```text
-join EditorExample center
-EditorExample: 这是中文人物对白。
-leave EditorExample
-- 进入小游戏
-	jump PongExample/
+join 角色名 center
+角色名: 这是中文对白。
+leave 角色名
+- 选项一
+	jump 另一条时间线/
 - 返回标题
 	[signal arg="GAME_END"]
 ```
 
-PongResult 取 left／right／cancel。结果时间线使用原生 if／elif／else；记录结局选项使用原生条件及可见性：
+变量在 Dialogic → Variables 定义。条件选项：
 
 ```text
-- 记录本次结局并返回标题 | [if {PongResult} != "cancel"] [else="0"]
+- 记录结局并返回标题 | [if {PongResult} != "cancel"] [else="0"]
 ```
 
-else=0 表示条件不成立时隐藏。后台已验证左右结果显示、取消隐藏，最新条件仍待界面复核。FantasyChoices 场景已配置七个原生 ChoiceButton；再增加同时出现的选项时，应按 Dialogic 样式规则配置足够的按钮。
+`else="0"` 表示条件不成立时隐藏（`1` 为置灰）。选项样式预置了七个按钮，同屏选项超过七个需要在 `DialogicFantasyStyle/FantasyChoices` 里加按钮。
 
-中文使用 Noto Sans SC。文本框保留模板的原生滚动功能；过长对白可用 Dialogic 的 [n] 分段。字号上限和长段落布局尚需完整验收。
+中文字体为 Noto Sans SC；长对白用 `[n]` 分段，文本框自带滚动。
 
-## 背景、声音及鉴赏
+## 背景、声音
 
-资源全部使用 res:// 路径。当前背景在 Assets/Backgrounds/JAP，采用 CC0 日落和雪山；许可未确认的旧 Painterly 已退出活动工程。GalleryExample 直接用原生 Background 与 Choice 事件切换变体。
+- 资源一律用 `res://` 路径，放在 `game/` 内。
+- 背景用 Background 事件；示例 `examples/timelines/GalleryExample.dtl` 演示两张背景切换。
+- 音频总线：Master／Music／SFX／Voice／UI_SFX。音乐、环境声、音效用 Audio 事件，语音用 Voice 事件。示例 `examples/timelines/AudioExample.dtl`。
 
-声音沿用 Godot 总线 Master／Music／SFX／Voice／UI_SFX。音乐与环境音、音效用 Dialogic Audio 事件，语音用 Voice 事件；文件在 game 内落地。AudioExample 使用 Kenney CC0 男女声 Ready 和非循环 SFX。来源、配音署名及许可随 licenses 交付。
+## 鉴赏
 
-鉴赏使用 wtmenten/DialogicTemplate 的 TimelineMeta 资源。复制 content/gallery 下的 tres，在检查器设置 timeline、user_label、thumbnail、timeline_type=CG。系统按时间线首条文字事件的全局已读状态解锁，故回放时间线必须有文字事件。
+鉴赏页读取 `content/gallery/` 与 `examples/gallery/` 下的 TimelineMeta（.tres）：
 
-六个当前条目分别为人物演出、背景变体、Teller／Skye 音乐、左右结局。音乐回放的播放／停止仍用原生 Audio 事件；结局与背景回放以 GAME_END 返回标题。主菜单启动时加载全局已读，结束时保存；鉴赏回放关闭自动存档并保留原继续指针。
+1. 复制一个现有 .tres 到 `content/gallery/`。
+2. 在检查器设置 timeline、user_label、thumbnail、timeline_type。
+3. 解锁条件是该时间线**第一条文字事件**被读过（全局已读，跨周目保留）。所以回放用的时间线必须有文字事件。
 
-图库嵌入模板时必须保留 GalleryTab 的锚点布局（layout_mode=1）及卡片最小尺寸；缺少这两项会出现资源已加载但页面空白。当前已修正并实际显示卡片。
+结局、背景回放用 `GAME_END` 返回标题。新游戏会清空本局状态但保留全局解锁。
 
-全局记录使用 Dialogic 原生存储；新游戏清理本局状态，不另建解锁管理器。独立包已验证两种结局跨周目与冷启动保留、锁定卡和右侧回放；全部条目的最终冷启动回放复核仍待完成。
+## 接入小游戏
 
-## 接入现成小游戏
+以 Pong 为例（`examples/minigames/pong` 为官方原版，`examples/integration/` 为连接代码）：
 
-minigames/pong 是官方现成 Pong，保留原运动与碰撞代码。
+1. 时间线用 Background 事件加载 `pong_background.tscn`，它继承 DialogicBackground 并实例化 Pong。
+2. Call 事件执行 `ExampleBridge.play_pong()`，等待场景发出 `finished(result)`。
+3. 结果写入 Dialogic 变量 `PongResult`（left／right／cancel），时间线按变量分支。
+4. 存档：场景实现 `_get_state()` 与 `_load_state()`，Dialogic 存档时自动把它们放进同一份存档，读档时重建场景并恢复。不需要第二套存档。
 
-1. Background 事件实例化 integration/pong_background.tscn。
-2. 场景继承 DialogicBackground，内部实例化 Pong。
-3. Call 事件执行 ExampleBridge.play_pong()，等待 finished。
-4. 连接代码将 left／right／cancel 写入 PongResult，恢复对白框。
-5. 原生时间线根据结果进入对白、重试或结局。
+新玩法照此写一个继承 DialogicBackground 的场景和一个 autoload 桥接函数即可。操作：左 W/S，右 ↑/↓，Esc 暂停与存档，Backspace 取消。
 
-左侧 W/S、右侧上下键；Esc 打开模板暂停／存档，Backspace 取消。不要把本玩法字段推广成新的通用小游戏管理器。
+## 存档、设置、历史
 
-Dialogic Backgrounds 调用场景 _get_state()，将球位置、方向、速度和两个球拍位置装入同一份 DialogicSaveState。读取时重建场景并调用 _load_state()。没有第二份存档文件或新协议；其他玩法只映射自身恢复所需状态。
+- 每页四槽，共十五页；slot_58 是自动档，slot_59 是快捷档（F5 存、F9 读），保存页不能手动覆盖这两个槽。
+- 存档带缩略图、时间、位置；覆盖和删除都有确认。
+- 从 `GAME_END` 回到标题会清掉“继续游戏”；直接关窗不会。
+- 设置使用 Dialogic 全局设置与 AudioServer。新增需要冷启动保留的 Dialogic 设置项，必须在 `project.godot` 的 `dialogic/settings/` 下声明默认值，否则重启后不会加载。
+- 显示模式：0=1152×648、1=全屏、2=1600×900、3=1920×1080。
 
-独立包已实际得到左右结果并回到对应结局，slot_2 中途档冷启动后继续完成；此前暂停物理核对 slot_1 的五项数值完全一致，记录见 staging/pong-restore-values.log。
+## 导出
 
-## 存档、设置与历史
+`导出Windows.ps1`，或编辑器 项目 → 导出 → 导出项目（取消“使用调试导出”）。输出到 `dist/windows/`，把 exe、pck、licenses 一起发给玩家即可。导出预设已排除 `Templates/`、README 和未使用的字体音效。
 
-手动存档沿用模板每页四槽，共十五页。最后两槽为 slot_58 自动档和 slot_59 快捷档；保存页禁止手动覆盖专用槽，读取页可读取。F5／F9 是原生 Button Shortcut，不是另一套存档机制。
+## 外部制作工具
 
-打开菜单前使用 Dialogic.Save.take_thumbnail()，保存写入原生缩略图、时间和位置。独立包实际显示了人物与小游戏缩略图。覆盖确认已使用；删除目前仅验证确认框和取消，未提交删除。
-
-DialogicGameHandler.load_full_state 已修正为等待布局 ready、恢复子系统再启动时间线，防止自动档抢先捕获隐藏文本框。舞台快捷档经独立包冷启动恢复了日落、双人物和原对白；原生档内 TextInput 为“中文测试”。
-
-设置仍用模板控件、Dialogic 全局设置和 AudioServer。text_speed 必须在 project.godot 的 dialogic/settings 下声明默认值，否则虽然写入全局文件，冷启动不会被 Settings 子系统重新加载。当前已声明，并完成修正后的实际冷启动检查。
-
-显示索引为 0=1152×648、1=全屏、2=1600×900、3=1920×1080。窗口模式设置尺寸后调用 Window.move_to_center。全部显示选项已实际操作，字号、自动速度、跳过规则和五路音量已修改并冷启动复核，最后恢复默认。
-
-历史沿用模板列表。alpha 20 的人物退场 mode 为 Leave，选择历史 all_choices 为字典数组；history_message.gd 已据当前上游结构修正，保留可见性、禁用及选择加粗。独立包实际历史中已不再出现原占位文字。
-
-## 搬迁与外部内容
-
-staging/relocated-project 含独立引擎、导出模板及工程；其导出入口已成功构建。staging/standalone-player 只含发行文件，已实际完成 AVG／Pong 代表性完整循环。搬迁编辑器中实际修改、保存、预览仍待完成，运行环境仍为本开发机。
-
-无窗口导入／导出仍有编辑器退出资源泄漏警告，准确范围见根 README，不能写成“没有任何警告”。后台检查和成功导出不能替代剩余界面验收。
-
-外部工具交付有许可的图片、音频及 Dialogic 原生人物／时间线。复制进 game/Assets、game/content 后使用；不复制密钥、数据库、缓存或外部绝对路径，不实时依赖 localhost 服务。Windows 沿用上游 Assets 大小写。cangqi 原文仓库不迁移、不改写。
-
-用户工作期间只运行后台命令；不为验收激活、点击、关闭或重新启动前台程序。待用户允许连续占用界面后，再复核 README 中明确列出的剩余操作。
+外部工具只交付有许可的图片、音频和 Dialogic 原生 .dtl／.dch。复制进 `game/content/` 后使用，不带入密钥、数据库、缓存或绝对路径，游戏运行时不访问任何本机服务。

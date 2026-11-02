@@ -11,4 +11,4 @@
 - sunsetintheswamp.png — https://opengameart.org/sites/default/files/sunsetintheswamp.png
 - coldmountain.png — https://opengameart.org/sites/default/files/coldmountain.png
 
-本地路径：game/Assets/Backgrounds/JAP/。两张图片仅作框架技术示例，不代表苍岐正式美术。
+本地路径：game/examples/assets/backgrounds/JAP/。两张图片仅作框架技术示例，不代表任何正式美术。
